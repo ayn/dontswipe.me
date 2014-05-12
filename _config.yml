@@ -1,0 +1,16 @@
+# Site settings
+title: Don't Swipe
+email: support@dontswipe.me
+twitter: dontswipeapp
+appstoreurl: "http://bit.ly/dontswipe"
+description: "Because you have photos that you don't want everyone to see"
+baseurl: ""
+url: "http://dontswipe.me"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#sass
+sass:
+    sass_dir: /assets/css
