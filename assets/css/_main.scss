@@ -13,7 +13,7 @@ body {
   font-size: 22px;
   line-height: 1.5;
   font-weight: 300;
-  background-color: $roman;
+  background-color:$roman;
   color: $white;
 }
 
@@ -50,7 +50,7 @@ a {
 
 .site-header {
   min-height: 56px;
-  margin-top:4em;
+  padding-top:10%;
 }
 
 .site-title,
@@ -123,7 +123,7 @@ fill:$black;
   width: calc(41.875%);
 }
 
-.site-footer ul { list-style: none; }
+.ul-none { list-style: none; }
 
 .site-footer li,
 .site-footer p {
@@ -415,4 +415,52 @@ fill:$black;
     width: auto;
     margin: 0 0 15px; }
 
+}
+
+.dontswipe-icon-svg {
+  width:60%;
+}
+
+.full-wrap-btm {
+@include breakpoint(medium) { background: linear-gradient(to bottom, rgba($roman, 0.1) 0%,rgba($roman, 1) 50%); }
+// background-color:rgba($roman, 0.9);
+width:100%;
+position:absolute;
+left:0;
+bottom: 0;
+text-align:center;
+}
+
+.popupframe {
+  transition: all 1s ease-out;
+  overflow:hidden;
+  position:relative;
+  z-index:10;
+  height:0;
+
+  &.intro {
+    @include breakpoint(medium) { height:379.5px; }
+  }
+}
+
+.download {
+  list-style:none;
+  display:inline-block;
+  padding-bottom:0.3em;
+
+  @include breakpoint(medium) {
+    position:absolute;
+    z-index:1000;
+    margin-left:220px;
+    bottom:120px;
+  }
+
+  li {
+    margin-bottom:1.3em;
+  }
+}
+
+.iphone {
+  width:80%;
+  max-width:367.5px;
 }
